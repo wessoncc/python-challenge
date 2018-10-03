@@ -8,6 +8,7 @@ with open(csvpath, 'r') as csvfile:
 
 
 df = pd.read_csv('budget_data.csv', delimiter=',')
+print(df)
 PandL = df['Profit/Losses'].values
 average_change = PandL[1:] - PandL[:-1]
 #average_change = (df["Profit/Losses"[i]] - df["Profit/Losses"[i + 1]])
@@ -24,6 +25,4 @@ print("Average Change: $" + str(round(TotalAvgChange, 2)))
 print("Greatest Increase in Profits: $" + str(maxProfit))
 print("Greatest Decrease in Profits: $" + str(minProfit))
 
-print(maxProfit)
-print(minProfit)
 

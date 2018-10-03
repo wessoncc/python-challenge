@@ -1,14 +1,14 @@
 import os
 import csv
 import pandas as pd
+import numpy as np
 csvpath = os.path.join('X:/Users/cwess_000/Data_Bootcamp/UCFLM201809DATA2/03-Python/Homework/Instructions/PyBank/Resources/', 'budget_data.csv')
 with open(csvpath, 'r') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
-    print(csvreader)
-    csv_header = next(csvreader)
-    print(f"CSV Header: {csv_header}")
-    for row in csvreader:
-        print(row)
+
 
 df = pd.read_csv('budget_data.csv', delimiter=',')
-print(df)
+for i in range(1, 87):
+    print(i)
+    
+    

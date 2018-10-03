@@ -13,17 +13,13 @@ average_change = PandL[1:] - PandL[:-1]
 #average_change = (df["Profit/Losses"[i]] - df["Profit/Losses"[i + 1]])
 sum_of_change = sum(average_change) 
 TotalAvgChange = (sum_of_change/(len(df) - 1))
-maxProfit = max(average_change)    
-minProfit = min(average_change)
+    
+
 
 print("Financial Analysis")
 print("-------------------------------------------")
 print("Total Months: " + str(len(df)))
 print("Total: $" + str(sum(df["Profit/Losses"])))
-print("Average Change: $" + str(round(TotalAvgChange, 2)))
-print("Greatest Increase in Profits: $" + str(maxProfit))
-print("Greatest Decrease in Profits: $" + str(minProfit))
+print("Average change: $" + str(round(TotalAvgChange, 2)))
 
-print(maxProfit)
-print(minProfit)
 
